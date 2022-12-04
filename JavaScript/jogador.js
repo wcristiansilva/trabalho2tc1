@@ -160,7 +160,7 @@ const editDelete = (event) => {
     }
 }
 
-function returnMenu(){location.href = "index.html"}
+function returnMenu(){location.href = "https://wcristiansilva.github.io/trabalho2tc1/index.html"}
 
 function listarJogadores() {updateTable()}
 

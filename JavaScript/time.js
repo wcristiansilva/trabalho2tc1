@@ -166,7 +166,7 @@ const editDelete = (event) => {
     }
 }
 
-const returnMenu = () => {location.href = "index.html"}
+const returnMenu = () => {location.href = "https://wcristiansilva.github.io/trabalho2tc1/index.html"}
 
 const listarTimes= () =>{updateTable()}
 
