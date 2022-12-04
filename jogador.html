@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="IMG/TC1-ICON.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/button.css">
+    <link rel="stylesheet" href="CSS/records.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+    <script src="JavaScript/jogador.js" defer></script>
+    <title>Trabalho 2 TC1</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Jogador</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="returnMenu">Menu</button>
+        <button type="button" class="button blue mobile" id="cadastrarJogador">Cadastrar Jogador</button>
+        <button type="button" class="button blue mobile" id="listarJogadores">Listar Jogadores</button>
+        <button type="button" class="button blue mobile" id="listarJogador">Listar Jogador</button>
+        <table id="tableJogador" class="records">
+            <thead>
+                <tr>
+                    <th>Cpf</th>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>Sexo</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>E-mails</th>
+                    <th>Telefones</th>
+                    <th>Posições em Jogo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- MODAL APAGAR -->
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 id="delete-player">Excluir Jogador</h2>
+                    <span class="modal-close" id="modalClose2">&#10006;</span>
+                </header>
+                <div id='avisoDelete'>
+                    <!-- aviso de delete -->
+                </div>
+                <footer class="modal-footer">
+                    <button type="submit" id="apagar" class="button red">Apagar</button>
+                    <button type="submit" id="cancelar2" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        <!-- MODAL BUSCAR -->
+        <div class="modal" id="modal3">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 id="busca-jogador">Buscar Jogador</h2>
+                    <span class="modal-close" id="modalClose3">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="input-busca" class="modal-field" placeholder="Digite o nome do Jogador" >
+                    <input type="submit" id="send" class="button blue mobile" value="Buscar">
+                </form>
+            </div>
+        </div>
+
+        <!-- MODAL CRIAR E EDITAR -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 id="new-edit">Novo Jogador</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="cpf" data-index="new" class="modal-field" placeholder="Cpf do Jogador" required>
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome do Jogador" required>
+                    <input type="text" id="data" class="modal-field" placeholder="Data Nascimento do Jogador" required>
+                    <input type="text" id="sexo" class="modal-field" placeholder="Sexo do Jogador" required>
+                    <input type="text" id="peso" class="modal-field" placeholder="Peso do Jogador" required>
+                    <input type="text" id="altura" class="modal-field" placeholder="Altura do Jogador" required>
+                    <input type="email" id="emails" class="modal-field" placeholder="E-mails do Jogador" required>
+                    <input type="text" id="telefones" class="modal-field" placeholder="Telefones do Jogador" required>
+                    <input type="text" id="posicoes" class="modal-field" placeholder="Posições do Jogador" required>
+                </form>
+                <footer class="modal-footer">
+                    <button type="submit" id="salvar" class="button green">Salvar</button>
+                    <button type="submit" id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        Trabalho 2 Tópicos em Computação 1
+    </footer>
+</body>
+</html>
