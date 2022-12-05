@@ -185,6 +185,7 @@ const updateTableSearch = (equip, index) => {
 }
 
 const buscarTime = () => {
+    clearTable()
     document.querySelector('#input-busca').focus()
     openModal3()
     const btn = document.querySelector('#send')

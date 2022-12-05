@@ -179,6 +179,7 @@ const updateTableSearch = (equip, index) => {
 }
 
 const buscarJogador = () => {
+    clearTable()
     document.querySelector('#input-busca').focus()
     openModal3()
     const btn = document.querySelector('#send').addEventListener('click', (e) => {
